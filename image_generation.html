@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Generation</title>
+</head>
+<body>
+    <h1>Image Generation</h1>
+    <p>Welcome to the image generation page! Here you can generate images based on your inputs.</p>
+    
+    <form action="/generate_image" method="POST" enctype="multipart/form-data">
+        <label for="description">Image Description:</label>
+        <input type="text" id="description" name="description" placeholder="Enter a description">
+        <br>
+        <input type="submit" value="Generate Image">
+    </form>
+    
+    <p>Generated image will be displayed below:</p>
+    <img src="{{ generated_image }}" alt="Generated Image">
+    
+    <p><a href="/">Back to Home</a></p>
+</body>
+</html>

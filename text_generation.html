@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本生成 - ChatGPT AI Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>文本生成</h1>
+    </header>
+    <nav>
+        <a href="index.html">首页</a>
+        <a href="text_generation.html">文本生成</a>
+        <a href="image_generation.html">图像生成</a>
+        <a href="contact_us.html">联系我们</a>
+    </nav>
+    <main>
+        <form id="text-generation-form">
+            <label for="input-text">请输入要生成的文本：</label>
+            <textarea id="input-text" rows="4" cols="50"></textarea>
+            <button type="submit">生成</button>
+        </form>
+        <h3>生成结果：</h3>
+        <p id="generated-text"></p>
+    </main>
+    <footer>
+        <p>&copy; 2023 ChatGPT AI Website. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
